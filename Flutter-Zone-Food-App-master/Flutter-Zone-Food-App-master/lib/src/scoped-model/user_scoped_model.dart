@@ -158,7 +158,7 @@ class UserModel extends Model {
         );
       } else if (authMode == AuthMode.SignIn) {
         response = await http.post(
-          "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyA62Y14Eu3iCTYBYZVFi4pNPXjL702baOI",
+          "use api key",
           body: json.encode(authData),
           headers: {'Content-Type': 'application/json'},
         );
